@@ -29,7 +29,7 @@ app.use(function (req, res, next) {
     console.error(err.stack)
     res.status(500).send('Something broke!')
   });
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`Listening on ${port}`);
 });
